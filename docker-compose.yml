@@ -1,0 +1,18 @@
+version: "3.7"
+services:
+  sales:
+    build:
+      context: ./sales
+      dockerfile: ./Dockerfile
+    ports:
+      - "8100:8100"
+    volumes:
+      - ./sales:/app
+  accounts:
+    build:
+      context: ./accounts
+      dockerfile: ./Dockerfile
+    ports:
+      - "8101:8101"
+    volumes:
+      - ./accounts:/app
