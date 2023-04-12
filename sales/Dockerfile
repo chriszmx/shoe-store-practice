@@ -17,3 +17,6 @@ RUN pip install -r requirements.txt
 
 # Set the command to run the application
 CMD gunicorn --bind 0.0.0.0:8100 sales_microservice.wsgi
+
+
+# STATIC_ROOT = BASE_DIR / 'staticfiles'
